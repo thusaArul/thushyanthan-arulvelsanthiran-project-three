@@ -15,3 +15,101 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 }
 
 /* SETUP SNIPPET ABOVE */
+
+html{
+    background-image: radial-gradient(#78c8dc, #3bb3c2, black);
+}
+
+.flex{
+    display: flex;
+}
+
+.spaceEvenly{
+    justify-content: space-evenly;
+}
+
+body{
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+p,
+button,
+input {
+    text-align: center;
+    font-family: 'digiTextScript';
+    color: #ffbb55;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+button,
+input{
+    background-color: #ff8407;
+    color: black;
+}
+
+main {
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+div {
+    height: 225px;
+    width: 225px;
+    margin: 50px 5px 50px;
+    text-align: center; 
+}
+
+img {
+    width: 215.4px;
+    height: 215.4px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+button,
+input {
+    width: 150px;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+section {
+    margin: 0 calc((100vw - 250px) / 2);
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+@font-face {
+    font-family: 'digiTextScript';
+    src: url(./assets/fonts/PixelDigivolve-mOm9.ttf);
+}
+
+@font-face {
+    font-family: 'digiCodeScript';
+    src: url(./assets/fonts/Digicode\ Regular.ttf);
+}
+
+.digiCodeStyle{
+    font-family: 'digiCodeScript', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
