@@ -17,7 +17,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 /* SETUP SNIPPET ABOVE */
 
 html{
-    background-image: radial-gradient(#78c8dc, #3bb3c2, black);
+    background-color: black;
 }
 
 .flex{
