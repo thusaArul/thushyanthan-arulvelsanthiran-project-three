@@ -1,0 +1,17 @@
+.wrapper{
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+html{
+    background-color: black;
+}
+
+.flex{
+    display: flex;
+}
+
+.spaceEvenly{
+    justify-content: space-evenly;
+}

@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+p,
+button,
+input {
+    text-align: center;
+    font-family: 'digiTextScript';
+    color: #ffbb55;
+}
+
+h1{
+    font-size: 70px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+button,
+input{
+    background-color: #ff8407;
+    color: black;
+    width: 150px;
+    padding: 5px 0;
+    margin: 0 auto;
+}

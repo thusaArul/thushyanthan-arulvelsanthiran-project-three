@@ -1,0 +1,19 @@
+body{
+    flex-direction: column;
+}
+
+main {
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+img {
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 0;
+}

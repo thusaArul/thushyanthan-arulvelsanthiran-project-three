@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'digiTextScript';
+    src: url(./fonts/PixelDigivolve-mOm9.ttf);
+}
+
+@font-face {
+    font-family: 'digiCodeScript';
+    src: url(./fonts/DigicodeRegular.ttf);
+}
+
+.digiCodeStyle{
+    font-family: 'digiCodeScript', sans-serif;
+    text-align: center;
+    font-weight: bolder;
+}
