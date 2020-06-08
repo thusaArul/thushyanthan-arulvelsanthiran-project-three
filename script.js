@@ -119,6 +119,50 @@ let images = {
     ]
 };
 
+digiModify = (i) => {
+
+    // populate a box within each div
+    $('div').css('border', '5px solid #ff8407')
+
+    // run random number generators for each div
+    let randomNumber = Math.floor(Math.random() * 3);
+
+    // access database of images and names for each class and get the respective ones for the number generated
+    let childSelector = i + 1;
+    let populater = 'main div:nth-child(' + [childSelector] + ')';
+
+    // clear div of any previous images and names
+    $(populater).empty();
+
+    let imageMaker = images[i][randomNumber]['image'];
+    let stage = images[i][randomNumber]['stage'];
+    let titleMaker = images[i][randomNumber]['name'];
+    
+    // append the image into the proper div
+    $(populater).append(`<img src= ${imageMaker} >`)
+
+    if($('.digiCodeOn').val() === "DigiCode"){
+        // // append stage name below div
+    $(populater).append(`<p class='changeScript'> ${stage} </p>`)
+        // // append the name below the stage
+    .append(`<p class='changeScript'> ${titleMaker} </p>`);
+    } else {
+        $(populater).append(`<p class='changeScript digiCodeStyle'> ${stage} </p>`)
+        .append(`<p class='changeScript digiCodeStyle'> ${titleMaker} </p>`);
+    }
+
+    // below is for the first div, the DIGIEGG, which is connected to the second div for which i = 1
+    if (i === 1) {
+        let childSelectorDigiEgg = i;
+        let populaterDigiEgg = 'main div:nth-child(' + [childSelectorDigiEgg] + ')';
+        $(populaterDigiEgg).empty();
+        let imageMakerDigiEgg = images[i - 1][randomNumber]['image'];
+        $(populaterDigiEgg).append(`<img src= ${imageMakerDigiEgg} >`)
+        let stageDigiEgg = images[i - 1][randomNumber]['stage'];
+        $(populaterDigiEgg).append(`<p class='changeScript'> ${stageDigiEgg} </p>`);
+    }
+}
+
 digimonApp.init = () => {
 
     // on button submit for Digimon randomizer
