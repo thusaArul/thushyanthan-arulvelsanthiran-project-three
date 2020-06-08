@@ -119,6 +119,27 @@ let images = {
     ]
 };
 
+digimonApp.init = () => {
+
+    // on button submit for Digimon randomizer
+    $('.digiRoll').on('click', function () {
+        for (let i = 1; i < 7; i++) {
+            digiModify(i);
+        }
+    })
+
+    // button submit for language change
+    $('.digiCodeOn').on('click',function(){
+        $(".changeScript").toggleClass("digiCodeStyle");
+
+        if($(this).val() === "DigiCode"){
+            $(this).val("English");  
+        } else {
+            $(this).val("DigiCode");
+        }
+    });
+}
+
 $(function () {
     digimonApp.init();
 })
